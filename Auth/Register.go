@@ -62,7 +62,7 @@ func Registerhandler(w http.ResponseWriter, r *http.Request) {
 		}
 
 		var requestex string
-		requestex =""
+
 		// check if any of the fields are empty
 		if strings.TrimSpace(email) == "" || strings.TrimSpace(username) == "" || strings.TrimSpace(password) == "" || strings.Contains(username, "\n") || strings.Contains(email, "\n") || strings.Contains(password, "\n") || strings.Contains(username, " ") || strings.Contains(email, " ") || strings.Contains(password, " ") {
 			requestex = "empty"
